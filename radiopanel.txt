@@ -1,0 +1,152 @@
+"RadioPanel.txt"
+{
+
+//"SFUI_StandardRadio"
+//"SFUI_GroupRadio"	
+//"SFUI_ReportRadio"	
+	"Groups"
+	{
+		"standard"
+		{
+			"hotkey"	"1"
+			"title"	"Buy Menu"
+			"timeout"	"25"
+			
+			"Commands"
+			{
+				"go"
+				{
+					"hotkey"	"1"
+					"label"	"Full Buy Rifles"
+					"cmd"	"primary_ak47_m4a1; equipment; nade_pack"
+				}
+				
+				"fallback"
+				{
+					"hotkey"	"2"
+					"label"	"Full Buy AWP"
+					"cmd"	"primary_awp; equipment; nade_pack"
+				}
+				
+				"sticktog"
+				{
+					"hotkey"	"3"
+					"label"	"Force Buy Rifles"
+					"cmd"	"primary_force; equipment; nade_pack"
+				}
+				
+				"holdpos"
+				{
+					"hotkey"	"4"
+					"label"	"Force Buy Pistols"
+					"cmd"	"secondary_force; equipment; nade_pack"
+				}
+				
+				"followme"
+				{
+					"hotkey"	"5"
+					"label"	"Nade Pack + Equipment"
+					"cmd"	"equipment; nade_pack"
+				}
+			}
+		}
+		
+		"group"
+		{
+			"hotkey"	"2"
+			"title"	"#SFUI_StandardRadio"
+			"timeout"	"5"
+			
+			"Commands"
+			{
+				"roger"
+				{
+					"hotkey"	"1"
+					"label"	"#SFUI_Radio_Hold_Pos"
+					"cmd"	"holdpos"
+				}
+				
+				"roger"
+				{
+					"hotkey"	"2"
+					"label"	"#SFUI_Radio_Roger"
+					"cmd"	"roger; snd_playsounds Buttons.snd14"
+				}
+				
+				"negative"
+				{
+					"hotkey"	"3"
+					"label"	"#SFUI_Radio_Negative"
+					"cmd"	"negative; snd_playsounds Buttons.snd14"
+				}
+			}
+		}
+		
+		"report"
+		{
+			"hotkey"	"3"
+			"title"	"Cheats Menu"
+			"timeout"	"25"
+			
+			"Commands"
+			{
+				"enemyspot"
+				{
+					"hotkey"	"1"
+					"label"	"Cheats"
+					"cmd"	"sv_cheats 1"
+					
+				}
+				
+				"needbackup"
+				{
+					"hotkey"	"2"
+					"label"	"Clip Brushes"
+					"cmd"	"r_drawclipbrushes 2"
+				}
+				
+				"takepoint"
+				{
+					"hotkey"	"3"
+					"label"	"WallHack"
+					"cmd"	"r_drawothermodels 2"
+				}
+				
+				"sectorclear"
+				{
+					"hotkey"	"4"
+					"label"	"Godmode"
+					"cmd"	"god"
+				}
+				
+				"inposition"
+				{
+					"hotkey"	"5"
+					"label"	"Noclip"
+					"cmd"	"noclip"
+				}
+				
+				"infinite_ammo"
+				{
+					"hotkey" "5"
+					"label" "Infinite Ammo"
+					"cmd" "sv_infinite_ammo 1"
+				}
+				
+				"show_impacts"
+				{
+					"hotkey" "6"
+					"label" "Show Bullet Impacts"
+					"cmd" "sv_showimpacts 1"
+				}
+				
+				"grenade_trajectory"
+				{
+					"hotkey" "7"
+					"label" "Grenade Trajectory"
+					"cmd" "sv_grenade_trajectory 1"
+				}
+			}
+		}
+	}
+}
