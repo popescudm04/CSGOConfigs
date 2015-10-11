@@ -6,6 +6,39 @@
 // Some commands are explained, others aren't.
 // Original Poster: http://steamcommunity.com/sharedfiles/filedetails/?id=275969700
 
+// Table Of Contents:
+// ------------------
+// +                   1
+// -                   55
+// ai_                 117
+// ammo_               147
+// bot_                184
+// budget_             223
+// cam_                253
+// cash_               265
+// cl_                 313
+// demo_               575
+// ent_                633
+// fog_                687
+// gameinstructor_     729
+// inferno_            812
+// joy_                848
+// map_                941
+// mat_                947
+// mm_                 1074
+// mp_                 1090
+// nav_                1242
+// net_                1384
+// player_             1491
+// r_                  1582
+// snd_                1847
+// spec_               1957
+// sv_                 2006
+// tv_                 2199
+// voice_              2283
+// vprof_              2308
+// weapon_             2357
+
 1.	+alt1
 2.	+alt2
 3.	+attack
