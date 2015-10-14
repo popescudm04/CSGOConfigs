@@ -2371,3 +2371,159 @@ Reporting in. (reportingin)
 Get out of there, it's gonna blow! (getout)
 Negative! (negative)
 Enemy Down! (enemydown)
+
+SV_CHEATS 1 COMMANDS:
+---------------------
+mat_wireframe 1 [default value: 0] Wireframe wallhack. You can see players through walls, you can also see which walls you can shoot through.
+
+Script – turns wallhack on and off. Bind to your own key.
+
+alias wall "wallon"
+alias wallon "mat_wireframe 1;
+alias wall walloff"
+alias walloff "mat_wireframe 0;
+alias wall wallon"
+bind "[key]" "wallon"
+
+sv_cheats 1 console commands
+
+noclip
+Fly through walls. Also you can’t die will in noclip mode.
+
+r_drawothermodels 2 [default value: 1] Wireframe model wallhack. You can see other players through the wall. Works a bit like mat_wireframe 1.
+
+give [item name]
+Spawns weapon/ammo/equipment. For example “give weapon_ak47” spawns an ak_47.
+
+host_timescale 4 [default value: 1] Speedhack. Makes everyone on the server moves faster. Can be set to any value. Everything above 1 makes you move faster while everything below makes everything slower.
+
+Script – turns time_scale on and off. Bind to your own key.
+
+alias speed0 "host_timescale 1; alias speedh speed1"
+alias speed1 "host_timescale 4; alias speedh speed0"
+alias speedh speed1
+bind [key] speedh
+
+thirdperson [default value: firstperson] Not really a cheat. Gives you thirdperson perspective. Type “firstperson” to go back to normal view.
+
+Less recoil (no recoil):
+cl_predictweapons 0
+
+Less spread (laggy – no spread):
+cl_predict 0
+
+Speedhack:
+host_timescale 3.0 (default = 1)
+
+2nd SpeedHack:
+host_framerate 50
+
+Sound esp:
+snd_show 1
+snd_visualize 1
+
+wireframe wallhack:
+r_drawothermodels 2 (default = 1)
+
+Asus wallhack 1 and no flash:
+Mat_fillrate 1
+
+Asus wallhack 2:
+mat_proxy 2 (Default=0)
+
+Brushmodel:
+r_drawbrushmodels 0
+
+Chrome models:
+r_showenvcubemap 1
+
+White walls:
+mat_fullbright 2
+
+Blue walls:
+mat_normalmaps 1
+
+Wireframe Wallhack Menu (actually a video test menu):
+perfui
+
+Fullbright:
+mat_fullbright 1
+
+No smoke:
+r_drawparticles 0
+
+No flash:
+snd_digital_surround 1
+
+No fog:
+fog_enable 0
+
+Entity box:
+mem_force_flush 1
+
+Player Box ESP/wallhack (laggy – game might crash):
+r_partition_level 0 (default = -1)
+
+Player/weapon ESP:
+r_drawmodelstatsoverlay 1
+
+Enamy checker:
+cl_leveloverview 2
+
+Shadow ESP:
+r_shadowwireframe 1
+
+Impact ESP/tracer ESP:
+r_visualizetraces 1
+r_rainspeed 0
+
+Fire / smoke ESP:
+cl_particles_show_bbox 1
+
+Tracer ESP:
+r_visualizelighttraces 1
+
+Hitlocation ESP:
+r_modelwireframedecal 1
+
+Random Player Hitbox tracer:
+sv_showplayerhitboxes 1
+
+Impact Marker:
+sv_showimpacts 1
+
+Consistency Bypass:
+Sv_consistency 0
+
+Events:
+
+Fire beacon:
+r_drawlights 1
+
+Player boxes:
+r_drawrenderboxes 1
+
+Living/dead player indicator:
+vcollide_wireframe 1
+
+Luxels (squares on walls):
+mat_luxels 1
+
+Zoom:
+_aspectratio 0.3 (Default= 0)
+
+Unlock max down and up sight:
+cl_pitchup 900
+cl_pitchdown 900
+
+No Bob:
+cl_bobcycle 0
+
+Low resolution images (celled walls):
+mat_showlowresimage 1
+
+Texture location:
+mat_surfaceid (voor memory addres), mat_surfacemat (voor texture naam)
+
+Memory Adress Finder:
+vgui_drawtree 1
