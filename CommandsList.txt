@@ -398,7 +398,88 @@
 357.	cl_crosshairthickness "0"
 358.	cl_crosshairusealpha "1"
 359.	cl_crosshair_drawoutline "0" // Draws a black outline around the crosshair for better visibility
-360.	cl_crosshair_dynamic_maxdist_splitratio "0" // this is the ratio used to determine how long the inner and outer xhair pips will be. [inner = cl_ 361.	cl_crosshair_dynamic_splitalpha_innermod "1" // this is the alpha modification that will be used for the INNER crosshair pips once theyve split. 362. cl_crosshair_dynamic_splitalpha_outermod "0" // this is the alpha modification that will be used for the OUTER crosshair pips once theyve split. 363.	cl_crosshair_dynamic_splitdist "7" // this is the distance that the crosshair pips will split into 2. (default is 7) 364.	cl_crosshair_outlinethickness "1" // Set how thick you want your crosshair outline to draw (0.1-3) 365.	cl_csm_server_status // Usage: cl_csm_server_status 366.	cl_csm_status // Usage: cl_csm_status 367. cl_cs_dump_econ_item_stringtable // cl_cs_dump_econ_item_stringtable 368. cl_custommaterial_debug_graph "0" 369.	cl_debugrumble "0" // Turn on rumble debugging spew 370.	cl_debug_ugc_downloads "1" 371.	cl_decryptdata_key "0" // Key to decrypt encrypted GOTV messages 372.	cl_decryptdata_key_pub "0" // Key to decrypt public encrypted GOTV messages 373. cl_detail_avoid_force "0" // percentage of the width of the detail sprite ) 374.	cl_detail_avoid_radius "64" // radius around detail sprite to avoid players 375.	cl_detail_avoid_recover_speed "0" // how fast to recover position after avoiding players 376.	cl_detail_max_sway "5" // Amplitude of the detail prop sway 377.	cl_detail_multiplier "1" // extra details to create 378.	cl_disablefreezecam "0" // Turn on/off freezecam on client 379.	cl_disablehtmlmotd "0" // Disable HTML motds. 380.	cl_disable_ragdolls "0" 381.	cl_dm_buyrandomweapons "1" // they will receive the 382.	cl_downloadfilter "0" // nosounds) 383.	cl_download_demoplayer "1" // 2:all) 384.	cl_drawhud "1" // Enable the rendering of the hud 385.	cl_drawleaf "-1" 386.	cl_drawmaterial "0" // Draw a particular material over the frame 387. cl_drawshadowtexture "0" 388.	cl_draw_only_deathnotices "0" // For drawing only the crosshair and death notices (used for moviemaking) 389.	cl_dumpplayer // Dumps info about a player 390. cl_dumpsplithacks // Dump split screen workarounds. 391.	cl_dump_particle_stats // dump particle profiling info to particle_profile.csv 392.	cl_entityreport "0" // draw entity states to console 393. cl_ent_absbox // Displays the clients absbox for the entity under the crosshair. 394.	cl_ent_bbox // Displays the clients bounding box for the entity under the crosshair. 395.	cl_ent_rbox // Displays the clients render box for the entity under the crosshair. 396.	cl_extrapolate "1" // Enable/disable extrapolation if interpolation history runs out. 397.	cl_extrapolate_amount "0" // Set how many seconds the client will extrapolate entities for. 398.	cl_fastdetailsprites "1" // whether to use new detail sprite system 399.	cl_find_ent // Find and list all client entities with classnames that contain the specified substring. Format: cl_find_ent <substring> 400.	cl_find_ent_index // Display data for clientside entity matching specified index. Format: cl_find_ent_index <index> 401. cl_fixedcrosshairgap "3" // How big to make the gap between the pips in the fixed crosshair 402. cl_flushentitypacket "0" // For debugging. Force the engine to flush an entity packet. 403. cl_forcepreload "0" // Whether we should force preloading. 404.	cl_forwardspeed "450" 405. cl_freezecameffects_showholiday "0" // Happy holidays from the CS:GO team and Valve! 406. cl_freezecampanel_position_dynamic "1" // Turn on/off freezecams kill panel dynamic Y movement 407.	cl_fullupdate // Forces the server to send a full update packet 408.	cl_game_mode_convars // Display the values of the convars for the current game_mode. 409.	cl_idealpitchscale "0" 410. cl_ignorepackets "0" // Force client to ignore packets (for debugging). 411.	cl_interp "0" // Sets the interpolation amount (bounded on low side by server interp ratio settings). 412.	cl_interpolate "1" // Enables or disables interpolation on listen servers or during demo playback 413.	cl_interp_ratio "2" // Sets the interpolation amount (final amount is cl_interp_ratio / cl_updaterate). 414. cl_inv_showdividerline "0" // will show a divider line above the grenades in the inventory panel. 415. cl_jiggle_bone_debug "0" // Display physics-based jiggle bone debugging information 416. cl_jiggle_bone_debug_pitch_constraints "0" // Display physics-based jiggle bone debugging information 417.	cl_jiggle_bone_debug_yaw_constraints "0" // Display physics-based jiggle bone debugging information 418.	cl_jiggle_bone_invert "0" 419.	cl_lagcompensation "1" // Perform server side lag compensation of weapon firing events. 420.	cl_language "0" // Language (from Steam API) 421.	cl_leafsystemvis "0" 422.	cl_leveloverview "0" 423.	cl_leveloverviewmarker "0" 424. cl_loadout_colorweaponnames "0" // the weapon names are colored in the weapon loadout to match their rarity. 425.	cl_logofile "0" // Spraypoint logo decal. 426.	cl_mainmenu_show_datagraph "0" 427. cl_maxrenderable_dist "3000" // Max distance from the camera at which things will be rendered 428. cl_minimal_rtt_shadows "1" 429.	cl_modemanager_reload // Reloads the panel metaclasses for vgui screens. 430.	cl_mouseenable "0" 431.	cl_mouselook "1" // 0 for keyboard look. Cannot be set while connected to a server. 432.	cl_observercrosshair "1" 433.	cl_overdraw_test "0" 434. cl_panelanimation // Shows panel animation variables: <panelname | blank for all panels>. 435. cl_particles_dumplist // optional name substring. 436.	cl_particles_dump_effects 437. cl_particles_show_bbox "0" 438.	cl_particles_show_controlpoints "0" 439.	cl_particle_retire_cost "0" 440.	cl_pclass "0" // Dump entity by prediction classname. 441.	cl_pdump "-1" // Dump info about this entity to screen. 442.	cl_phys_show_active "0" 443.	cl_phys_timescale "1" // Sets the scale of time for client-side physics (ragdolls) 444.	cl_pitchdown "89" 445.	cl_pitchup "89" 446. cl_portal_use_new_dissolve "1" // Use new dissolve effect 447.	cl_precacheinfo // Show precache info (client).
+360.	cl_crosshair_dynamic_maxdist_splitratio "0" // this is the ratio used to determine how long the inner and outer xhair pips will be. [inner = cl_ 
+361.	cl_crosshair_dynamic_splitalpha_innermod "1" // this is the alpha modification that will be used for the INNER crosshair pips once theyve split. 
+362. cl_crosshair_dynamic_splitalpha_outermod "0" // this is the alpha modification that will be used for the OUTER crosshair pips once theyve split. 
+363.	cl_crosshair_dynamic_splitdist "7" // this is the distance that the crosshair pips will split into 2. (default is 7) 364.	cl_crosshair_outlinethickness "1" // Set how thick you want your crosshair outline to draw (0.1-3) 
+365.	cl_csm_server_status // Usage: cl_csm_server_status 
+366.	cl_csm_status // Usage: cl_csm_status 
+367. cl_cs_dump_econ_item_stringtable // cl_cs_dump_econ_item_stringtable 
+368. cl_custommaterial_debug_graph "0" 
+369.	cl_debugrumble "0" // Turn on rumble debugging spew 
+370.	cl_debug_ugc_downloads "1" 
+371.	cl_decryptdata_key "0" // Key to decrypt encrypted GOTV messages 372.	cl_decryptdata_key_pub "0" // Key to decrypt public encrypted GOTV messages 
+373. cl_detail_avoid_force "0" // percentage of the width of the detail sprite ) 
+374.	cl_detail_avoid_radius "64" // radius around detail sprite to avoid players 
+375.	cl_detail_avoid_recover_speed "0" // how fast to recover position after avoiding players 
+376.	cl_detail_max_sway "5" // Amplitude of the detail prop sway 
+377.	cl_detail_multiplier "1" // extra details to create 
+378.	cl_disablefreezecam "0" // Turn on/off freezecam on client 
+379.	cl_disablehtmlmotd "0" // Disable HTML motds. 
+380.	cl_disable_ragdolls "0" 
+381.	cl_dm_buyrandomweapons "1" // they will receive the 
+382.	cl_downloadfilter "0" // nosounds) 
+383.	cl_download_demoplayer "1" // 2:all) 
+384.	cl_drawhud "1" // Enable the rendering of the hud 385.	cl_drawleaf "-1" 
+386.	cl_drawmaterial "0" // Draw a particular material over the frame 
+387. cl_drawshadowtexture "0" 
+388.	cl_draw_only_deathnotices "0" // For drawing only the crosshair and death notices (used for moviemaking) 
+389.	cl_dumpplayer // Dumps info about a player 
+390. cl_dumpsplithacks // Dump split screen workarounds. 
+391.	cl_dump_particle_stats // dump particle profiling info to particle_profile.csv 
+392.	cl_entityreport "0" // draw entity states to console 
+393. cl_ent_absbox // Displays the clients absbox for the entity under the crosshair. 
+394.	cl_ent_bbox // Displays the clients bounding box for the entity under the crosshair. 
+395.	cl_ent_rbox // Displays the clients render box for the entity under the crosshair. 
+396.	cl_extrapolate "1" // Enable/disable extrapolation if interpolation history runs out. 
+397.	cl_extrapolate_amount "0" // Set how many seconds the client will extrapolate entities for. 
+398.	cl_fastdetailsprites "1" // whether to use new detail sprite system
+399.	cl_find_ent // Find and list all client entities with classnames that contain the specified substring. Format: cl_find_ent <substring> 
+400.	cl_find_ent_index // Display data for clientside entity matching specified index. Format: cl_find_ent_index <index>
+401. cl_fixedcrosshairgap "3" // How big to make the gap between the pips in the fixed crosshair 402. cl_flushentitypacket "0" // For debugging. Force the engine to flush an entity packet. 403. cl_forcepreload "0" // Whether we should force preloading. 
+404.	cl_forwardspeed "450" 
+405. cl_freezecameffects_showholiday "0" // Happy holidays from the CS:GO team and Valve! 
+406. cl_freezecampanel_position_dynamic "1" // Turn on/off freezecams kill panel dynamic Y movement 
+407.	cl_fullupdate // Forces the server to send a full update packet 
+408.	cl_game_mode_convars // Display the values of the convars for the current game_mode. 
+409.	cl_idealpitchscale "0" 
+410. cl_ignorepackets "0" // Force client to ignore packets (for debugging). 
+411.	cl_interp "0" // Sets the interpolation amount (bounded on low side by server interp ratio settings). 
+412.	cl_interpolate "1" // Enables or disables interpolation on listen servers or during demo playback 
+413.	cl_interp_ratio "2" // Sets the interpolation amount (final amount is cl_interp_ratio / cl_updaterate). 
+414. cl_inv_showdividerline "0" // will show a divider line above the grenades in the inventory panel. 
+415. cl_jiggle_bone_debug "0" // Display physics-based jiggle bone debugging information 
+416. cl_jiggle_bone_debug_pitch_constraints "0" // Display physics-based jiggle bone debugging information 
+417.	cl_jiggle_bone_debug_yaw_constraints "0" // Display physics-based jiggle bone debugging information 
+418.	cl_jiggle_bone_invert "0" 
+419.	cl_lagcompensation "1" // Perform server side lag compensation of weapon firing events. 
+420.	cl_language "0" // Language (from Steam API) 
+421.	cl_leafsystemvis "0" 
+422.	cl_leveloverview "0"
+423.	cl_leveloverviewmarker "0" 
+424. cl_loadout_colorweaponnames "0" // the weapon names are colored in the weapon loadout to match their rarity. 
+425.	cl_logofile "0" // Spraypoint logo decal. 426.	cl_mainmenu_show_datagraph "0" 
+427. cl_maxrenderable_dist "3000" // Max distance from the camera at which things will be rendered 
+428. cl_minimal_rtt_shadows "1" 
+429.	cl_modemanager_reload // Reloads the panel metaclasses for vgui screens. 
+430.	cl_mouseenable "0" 
+431.	cl_mouselook "1" // 0 for keyboard look. Cannot be set while connected to a server. 
+432.	cl_observercrosshair "1" 
+433.	cl_overdraw_test "0" 
+434. cl_panelanimation // Shows panel animation variables: <panelname | blank for all panels>. 
+435. cl_particles_dumplist // optional name substring. 
+436.	cl_particles_dump_effects 
+437. cl_particles_show_bbox "0" 
+438.	cl_particles_show_controlpoints "0" 
+439.	cl_particle_retire_cost "0" 
+440.	cl_pclass "0" // Dump entity by prediction classname. 
+441.	cl_pdump "-1" // Dump info about this entity to screen. 
+442.	cl_phys_show_active "0"
+443.	cl_phys_timescale "1" // Sets the scale of time for client-side physics (ragdolls) 
+444.	cl_pitchdown "89" 
+445.	cl_pitchup "89" 
+446. cl_portal_use_new_dissolve "1" // Use new dissolve effect 
+447.	cl_precacheinfo // Show precache info (client).
 448.	cl_predict "1" // Perform client side prediction.
 449.	cl_predictioncopy_describe // Describe datamap_t for entindex
 450.	cl_predictionlist "0" // Show which entities are predicting
