@@ -1,0 +1,77 @@
+*This got removed from /r/GlobalOffensive so I'm posting here.*
+
+So I saw those animated clan tag scripts and the rainbow crosshair script and realized that by having these .vtest files in the game someone could create a bhop script without any external programs. I then googled and saw that no one had made one successfully and posted it so here's my try. 
+
+Now this isn't really a script that makes you bhop perfectly, all it does is spam jump over and over for you while you hold spacebar, you still need to AD and move your mouse correctly to gain speed.
+
+**Step 1:**  
+Navigate to C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\testscripts  
+
+If this folder doesn't exist, create one.
+
+**Step 2:**  
+Open Notepad from the start menu.  
+Paste this code inside:  
+
+    +jump
+    Test_Wait 0.015625
+    -jump
+    Test_Wait 0.015625
+    Test_StartScript bhop_startt
+
+*Explanation for other scripters: For some reason when running  'Test_StartScript bhop_start' inside the script itself it gets recognized in the console as 'Test_StartScript bhop_star' and doesn't execute itself again, adding the extra t at the end makes the game recognize it as running 'Test_StartScript bhop_start' and creates a loop that can be ended without crashing the game.*
+
+**Step 3:**  
+CTRL + S and save this file in the folder you created earlier as bhop_start.vtest  
+Change 'Save as type:' to 'All Files'  
+Save
+
+**Step 4:**  
+Clear the notepad and paste this code in:
+
+    -jumpp
+
+*Explanation for other scripters: So other people who made .vtest scripts said that the only way to stop a script is to restart your game. I found that if you make an empty .vtest called something like stop.vtest and run it using 'Test_StartScript stop' it stops running whatever script is running at the time. Although this doesn't stop a loop that was created from the "Test_StartLoop" command and if you run a script that has a loop with the same name inside it your game will crash. Why my stop.vtest has '-jump' in it? Because sometimes when stopping the script it will stop in the middle of a +jump and you won't be able to use the +jump command again unless you type -jump in the console.*
+
+**Step 5:**  
+CTRL + S and save this file in the same folder.  
+Name it bhop_stop.vtest  
+Change 'Save as type:' to 'All Files'  
+Save
+
+**Step 6:**  
+Paste this code somewhere into your autoexec.cfg:
+    
+    bind space "+bhop"
+    alias "+bhop" "Test_StartScript bhop_start"
+    alias "-bhop"  "Test_StartScript bhop_stop"
+
+Save.
+
+
+**Step 7:**  
+Open your game and try it. 
+
+Someone else could probably make a button to toggle the spacebar between regular jump and this script or tweak the times to get better hops but I didn't really feel like going that far. 
+
+Also the reason why I posted this is NOT because I want to have more bhop scripters in this game but because I think that these .vtest files are cool but in the future I think that they could be used to create more cheaty things. Maybe something where you line up somewhere on a map and then run a script and it would do a jump throw smoke with timings that would be impossible for a human to recreate.
+
+I don't really know where I was going with this, but yeah, enjoy.
+
+**EDIT:** seeing as more people are looking at this post. I found a way to make a button that toggles it. and changed the time to 0.015625 (1/64 for 64 tick)
+
+Add this into your autoexec somewhere:  
+
+    alias "bhop_toggle1" "bind space +jump; bind alt bhop_toggle2; echo damage_BHOP_OFF"
+    alias "bhop_toggle2" "bind space +bhop; bind alt bhop_toggle1; echo damage_BHOP_ON"
+    
+And open your game and type "bind alt bhop_toggle2" into your console. You only need to do this once. Now when pressing the left alt key it toggles the spacebar between regular jump and hold to bhop.
+
+Also if you have this script that shows your damage log in the top left corner of the game,
+
+    developer 1
+    con_filter_enable 2
+    con_filter_text damage
+    con_filter_text_out TESTSCRIPT
+
+ it will tell you when you toggle between bhop mode and normal jump mode.
