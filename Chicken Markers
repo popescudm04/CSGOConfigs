@@ -1,0 +1,18 @@
+//////////////////////
+// Chicken Spawning //
+//////////////////////
+
+// Give you the ability to use chickens and spawn them at specific places and use them as markers. You can also see them through walls,
+// Credits goes to: https://www.reddit.com/r/CounterStrikeBinds/comments/41z6z7/using_chickens_to_find_new_smoke_lineups/
+
+alias "spawnChicken" "ent_create chicken; ent_setname chk; ent_fire chk setanimationnoreset flap"
+
+alias "killChicken" "ent_fire chk break; ent_fire chicken kill"
+
+alias "toggleGlow" "toggleGlowOn"
+alias "toggleGlowOn" "ent_fire chk setglowenabled; alias toggleGlow toggleGlowOff"
+alias "toggleGlowOff" "ent_fire chk setglowdisabled; alias toggleGlow toggleGlowOn"
+
+bind "z" "killChicken"
+bind "x" "spawnChicken"
+bind "c" "toggleGlow"
